@@ -1,3 +1,9 @@
+/* --- POLICES (hébergées sur le site) --- */
+@font-face { font-family: 'Montserrat'; font-weight: 300; font-style: normal; font-display: swap; src: url('fonts/montserrat-300.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 400; font-style: normal; font-display: swap; src: url('fonts/montserrat-400.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 600; font-style: normal; font-display: swap; src: url('fonts/montserrat-600.woff2') format('woff2'); }
+@font-face { font-family: 'Dancing Script'; font-weight: 600; font-style: normal; font-display: swap; src: url('fonts/dancing-script-600.woff2') format('woff2'); }
+
 /* ==========================================================
    THERAMOVE - style.css (version nettoyée)
    Ordre : base > accueil > footer > pages pôles > responsive
@@ -452,4 +458,46 @@ body.page-femme { background-color: #c09a92; color: #3e2723; }
     .page-sport .kine-greeting,
     .page-femme .kine-greeting { font-size: 1.35rem; }
     .page-sport .kine-person .btn-rdv-maiia { font-size: 0.64rem; }
+}
+
+/* ==========================================================
+   MENTIONS LÉGALES & INFOS PRATIQUES
+   ========================================================== */
+.footer-content { flex-wrap: wrap; justify-content: center; }
+
+.legal-link {
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 0.9;
+}
+.legal-link:hover { opacity: 1; }
+
+.infos-pratiques {
+    margin-top: 40px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+.legal-box {
+    background: #ffffff;
+    color: #2c3e2b;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+.legal-box h2 { font-size: 1.05rem; margin: 24px 0 8px; color: #1e3d14; }
+.legal-box h2:first-child { margin-top: 0; }
+.legal-box p + p { margin-top: 8px; }
+.legal-box a { color: #1e3d14; }
+
+@media (max-width: 768px) {
+    .legal-box { padding: 22px 18px; font-size: 0.9rem; }
+    .infos-pratiques { margin-top: 30px; font-size: 0.9rem; }
 }
