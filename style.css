@@ -804,3 +804,8 @@ body.page-sport .spec-card:hover {
     object-fit: cover;
     object-position: center 20%;
 }
+/* Même couleur d'accueil sur ordinateur et téléphone */
+body.home-body {
+    background-color: #a6634f !important;
+    background-image: none !important;
+}
