@@ -798,3 +798,9 @@ body.page-sport .spec-card:hover {
         aspect-ratio: 3 / 4;
     }
 }
+/* Photo Pauline - Pôle sportif */
+.page-sport .photo-pauline-sport {
+    image-rendering: auto;
+    object-fit: cover;
+    object-position: center 20%;
+}
