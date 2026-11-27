@@ -1,727 +1,244 @@
 /* --- RESET ET BASE --- */
-
-* {
-
-    margin: 0;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
-}
-
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-
     background-color: #a6634f; /* Marron Accueil */
-
     color: white;
-
     font-family: 'Montserrat', sans-serif;
-
     min-height: 100vh;
-
 }
-
-
 
 /* --- ACCUEIL --- */
+body.home-body { display: flex; justify-content: center; align-items: center; }
 
-body.home-body {
+.container { text-align: center; padding: 20px; width: 100%; padding-bottom: 100px; }
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-}
-
-
-
-.container {
-
-    text-align: center;
-
-    padding: 20px;
-
-    width: 100%;
-
-    padding-bottom: 100px; /* Espace pour le footer */
-
-}
-
-
-
-.logo-img {
-
-    width: 180px;
-
-    filter: brightness(0) invert(1);
-
-    margin-bottom: 10px;
-
-}
-
-
+.logo-img { width: 180px; filter: brightness(0) invert(1); margin-bottom: 10px; }
 
 .brand-title {
-
     font-family: 'Dancing Script', cursive;
-
     font-size: 7.5rem;
-
     margin-top: -30px;
-
     margin-bottom: 30px;
-
 }
-
-
 
 .subtitle { font-size: 2rem; margin-bottom: 15px; }
-
 .details { font-size: 1.4rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 60px; opacity: 0.9; }
 
-
-
 .navigation-links {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 15px;
-
     align-items: center;
-
-    margin-top: -30px
-
-  
-
+    margin-top: -30px;
 }
-
-
 
 .btn-pole {
-
     width: 100%;
-
     max-width: 450px;
-
     padding: 22px;
-
     border: 1.5px solid rgba(255, 255, 255, 0.4);
-
     border-radius: 50px;
-
     color: white;
-
     text-decoration: none;
-
     background: rgba(255, 255, 255, 0.05);
-
     transition: 0.3s;
-
 }
-
-
 
 .btn-pole:hover { background: white; color: #a6634f; }
 
-
-
 /* --- BARRE FOOTER (STYLE GLASS BLANC) --- */
-
 .footer-bar-glass {
-
     position: fixed;
-
     bottom: 0;
-
     left: 0;
-
     width: 100%;
-
-    background: rgba(255, 255, 255, 0.15); /* Voile blanc transparent */
-
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
-
     -webkit-backdrop-filter: blur(10px);
-
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-
     padding: 15px 0;
-
     z-index: 1000;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
 }
-
-
 
 .footer-content { display: flex; align-items: center; gap: 15px; }
 
-
-
-.find-text {
-
-    font-size: 0.8rem;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1.5px;
-
-    font-weight: 400;
-
-}
-
-
+.find-text { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 400; }
 
 .btn-google-maps {
-
     display: flex;
-
     align-items: center;
-
     gap: 8px;
-
     padding: 8px 20px;
-
     border: 1px solid white;
-
     border-radius: 50px;
-
     color: white;
-
     text-decoration: none;
-
     font-size: 0.85rem;
-
     transition: 0.3s;
-
 }
-
-
 
 .btn-google-maps:hover { background: white; color: #a6634f; }
-
-
-
 .pin-icon { width: 14px; height: 14px; }
 
-
-
 /* --- STYLE COMMUN AUX DEUX PÔLES (SPORT & FEMME) --- */
-
-
-
-/* Conteneur principal identique */
-
 .container-detail {
-
     max-width: 1000px;
-
     margin: 0 auto;
-
-    padding: 20px 20px 100px 20px; /* Espace pour le footer */
-
+    padding: 20px 20px 100px 20px;
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
 }
-
-
-
-/* Titre principal (Montserrat 300 - Fin) */
 
 .detail-title {
-
     font-family: 'Montserrat', sans-serif !important;
-
-    font-size: 2.5rem;            /* Taille identique demandée */
-
-    font-weight: 300 !important;   /* Écriture fine et chic */
-
+    font-size: 2.5rem;
+    font-weight: 300 !important;
     text-align: center;
-
     text-transform: uppercase;
-
     letter-spacing: 4px;
-
     margin-top: 40px;
-
     margin-bottom: 50px;
-
 }
-
-
-
-/* Style des cases (Cartes) */
 
 .spec-card {
-
     padding: 30px 20px;
-
     border-radius: 15px;
-
     text-decoration: none;
-
     color: white;
-
     text-align: center;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
-    min-height: 115px;            /* Hauteur identique */
-
+    min-height: 115px;
     transition: 0.3s ease;
-
 }
 
-
-
-.spec-card:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-
-}
-
-
-
-/* Texte à l'intérieur des cases (Montserrat 700 - Gras) */
+.spec-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
 .spec-card h3 {
-
     font-family: 'Montserrat', sans-serif !important;
-
-    font-size: 1.2rem;            /* Taille texte identique */
-
-    font-weight: 700 !important;   /* Gras identique */
-
+    font-size: 1.2rem;
+    font-weight: 700 !important;
     margin: 0;
-
     line-height: 1.3;
-
 }
-
-
 
 /* --- SPÉCIFICITÉS PÔLE SPORT --- */
-
-body.page-sport {
-
-    background-color: #c8e68e !important; /* Vert pomme clair */
-
-    color: #1e3d14;
-
-}
-
-
-
-.page-sport .spec-card {
-
-    background: #1e3d14; /* Vert foncé */
-
-}
-
-
-
-.page-sport .specialites-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour sport */
-
-    gap: 15px;
-
-    width: 100%;
-
-}
-
-
-
+body.page-sport { background-color: #c8e68e !important; color: #1e3d14; }
+.page-sport .spec-card { background: #1e3d14; }
+.page-sport .specialites-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%; }
 .page-sport .back-link { color: #1e3d14; }
 
-
-
 /* --- SPÉCIFICITÉS PÔLE FEMME --- */
-
-body.page-femme {
-
-    background-color: #d8b6ab !important; /* Nude un peu plus foncé */
-
-    color: #3e2723;
-
-}
-
-
-
-.page-femme .spec-card {
-
-    background: #3e2723; /* Marron foncé */
-
-}
-
-
-
-.page-femme .specialites-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour femme */
-
-    gap: 20px;
-
-    width: 100%;
-
-    max-width: 850px; /* Un peu plus serré pour le 2x2 */
-
-}
-
-
-
+body.page-femme { background-color: #d8b6ab !important; color: #3e2723; }
+.page-femme .spec-card { background: #3e2723; }
+.page-femme .specialites-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%; max-width: 850px; }
 .page-femme .back-link { color: #3e2723; }
 
-
-
-
 /* --- RESPONSIVE (MOBILE) --- */
-
 @media (max-width: 768px) {
-
-    .detail-title {
-
-        font-size: 1.8rem;
-
-        margin-bottom: 30px;
-
-    }
-
-    
-
+    .detail-title { font-size: 1.8rem; margin-bottom: 30px; }
     .page-sport .specialites-grid,
-
-    .page-femme .specialites-grid {
-
-        grid-template-columns: 1fr; /* 1 colonne sur mobile */
-
-        gap: 15px;
-
-    }
-
-
-
-    .spec-card {
-
-        min-height: 90px;
-
-    }
-
+    .page-femme .specialites-grid { grid-template-columns: 1fr; gap: 15px; }
+    .spec-card { min-height: 90px; }
 }
 
-/* Section Hero Julian - Version compacte */
-
+/* --- SECTION HERO (bandeau photo) --- */
 .kine-hero {
-
-    background-color: #d4e3d4; /* Votre vert sauge */
-
-    min-height: 60vh; /* Réduit pour ne pas prendre tout l'écran */
-
+    background-color: #d4e3d4;
+    min-height: 60vh;
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
-    padding: 30px 20px;
-
+    padding: 40px 20px;
     position: relative;
-
 }
 
-
-
-.kine-hero-content {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 40px; /* Espace entre photo et texte */
-
-    max-width: 900px; /* Plus étroit pour rester centré */
-
-    width: 100%;
-
-}
-
-
-
-/* Image rectangulaire plus petite */
+.kine-hero-content { display: flex; align-items: center; gap: 40px; max-width: 900px; width: 100%; }
 
 .photo-julian {
-
-    width: 250px;      /* Largeur réduite */
-
-    height: 320px;     /* Hauteur proportionnée */
-
+    width: 250px;
+    height: 320px;
     object-fit: cover;
-
-    border-radius: 4px; /* Rectangle quasi-parfait */
-
-    box-shadow: 12px 12px 0px rgba(255, 255, 255, 0.2); /* Effet plus discret */
-
+    border-radius: 4px;
+    box-shadow: 12px 12px 0px rgba(255, 255, 255, 0.2);
 }
 
-
-
-/* Ajustement du texte */
-
-.kine-greeting {
-
-    font-family: 'Dancing Script', cursive;
-
-    font-size: 2.5rem; /* Titre un peu plus petit */
-
-    color: #2c3e50;
-
-    margin-bottom: 15px;
-
-}
-
-
+.kine-greeting { font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #2c3e50; margin-bottom: 15px; }
 
 .kine-desc {
-
     font-family: 'Montserrat', sans-serif;
-
     font-size: 1rem;
-
-    line-height: 1.5;
-
+    text-align: justify;
+    line-height: 1.6;
     color: #2c3e50;
-
     margin-bottom: 25px;
-
 }
-
-
-
-/* Bouton compact */
 
 .btn-rdv-maiia {
-
     display: inline-block;
-
     background-color: #27ae60;
-
     color: white;
-
     padding: 12px 25px;
-
     border-radius: 4px;
-
     text-decoration: none;
-
     font-weight: 600;
-
     font-size: 0.9rem;
-
     text-transform: uppercase;
-
     transition: 0.3s;
-
 }
 
+.scroll-indicator { position: absolute; bottom: 10px; font-size: 0.8rem; opacity: 0.7; }
+.mouse-icon { width: 20px; height: 30px; border: 2px solid #555; border-radius: 10px; margin: 5px auto; }
 
+/* --- PÔLE FEMME : bandeau et texte --- */
+.page-femme section,
+.page-femme .hero,
+.page-femme .header-section { background-color: #fcece9 !important; }
 
-/* Indicateur de scroll plus discret */
-
-.scroll-indicator {
-
-    position: absolute;
-
-    bottom: 10px;
-
-    font-size: 0.8rem;
-
-    opacity: 0.7;
-
-}
-
-
-
-.mouse-icon {
-
-    width: 20px;
-
-    height: 30px;
-
-    border: 2px solid #555;
-
-    border-radius: 10px;
-
-    margin: 5px auto;
-
-}
-
-
-/* On ajuste la section kine-hero pour qu'elle ne soit pas collée si besoin */
-
-.kine-hero {
-
-    background-color: #d4e3d4;
-
-    min-height: 60vh;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 40px 20px;
-
-    position: relative;
-
-}
-
-
-
-/* On justifie le texte comme demandé précédemment */
-
-.kine-desc {
-
-    font-family: 'Montserrat', sans-serif;
-
-    text-align: justify;
-
-    line-height: 1.6;
-
-    margin-bottom: 25px;
-
-    color: #2c3e50;
-
-}
-
-/* --- CHANGER LE VERT DU BANDEAU PHOTO (ROSE POUDRÉ) --- */
-
-.page-femme section, 
-
-.page-femme .hero, 
-
-.page-femme .header-section {
-
-    background-color: #fcece9 !important;
-
-}
-
-/* --- POSITIONNEMENT DU TEXTE À CÔTÉ DE LA PHOTO --- */
-
-
-
-/* 1. On cible le conteneur qui contient l'image ET le texte */
-
-.page-femme .kine-hero-content, 
-
-.page-femme .hero-container { 
-
+.page-femme .kine-hero-content,
+.page-femme .hero-container {
     display: flex !important;
-
-    flex-direction: row !important; /* Force l'alignement horizontal */
-
-    align-items: center !important;  /* Centre verticalement le texte par rapport à la photo */
-
+    flex-direction: row !important;
+    align-items: center !important;
     justify-content: center !important;
-
-    gap: 50px !important;           /* Espace entre la photo et le texte */
-
+    gap: 50px !important;
     max-width: 1000px;
-
     margin: 0 auto;
-
 }
-
-
-
-/* 2. On s'assure que le bloc de texte ne prend pas toute la largeur */
 
 .page-femme .kine-hero-content .text-content,
+.page-femme .hero-text { flex: 1; text-align: justify; }
 
-.page-femme .hero-text {
+.page-femme .kine-desc { text-align: justify !important; line-height: 1.6; margin-bottom: 25px !important; color: #3e2723; }
+.page-femme .btn-rdv-maiia { background-color: #3e2723 !important; color: white !important; }
 
-    flex: 1; /* Prend l'espace restant à côté de la photo */
-
-    text-align: justify; /* Aligne le texte proprement sur les côtés */
-
-}
-
-
-
-/* 3. Style du texte */
-.page-femme .kine-desc {
-    text-align: justify !important;
-    line-height: 1.6;
-    margin-bottom: 25px !important; /* <--- ON REMET LES 25PX COMME CHEZ JULIAN */
-    color: #3e2723;
-}
-
-/* On change aussi la couleur du bouton pour qu'il soit marron chic sur le rose */
-.page-femme .btn-rdv-maiia {
-    background-color: #3e2723 !important;
-    color: white !important;
-}
-
-}
 .page-femme .photo-charlene {
-    width: 200px !important;  /* Largeur réduite */
-    height: 270px !important; /* Hauteur proportionnée */
+    width: 200px !important;
+    height: 270px !important;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 10px 10px 0px rgba(62, 39, 35, 0.1); /* Ombre légère marron */
+    box-shadow: 10px 10px 0px rgba(62, 39, 35, 0.1);
 }
 
-/* On s'assure que le texte se met bien à côté */
-.page-femme .kine-hero-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
+.page-femme .kine-hero-content { display: flex; flex-direction: row; align-items: center; gap: 40px; margin-bottom: 50px; }
+
 /* ==========================================================
    HARMONISATION STRICTE ET COMPACTE (SPORT & FEMME)
    ========================================================== */
-
 .kine-hero {
     width: 100% !important;
-    /* On réduit la hauteur minimale pour un bandeau plus fin */
-    min-height: 350px !important; 
+    min-height: 350px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    /* Padding réduit : 30px en haut/bas pour moins de marge */
-    padding: 30px 20px !important; 
+    padding: 30px 20px !important;
     margin: 0 !important;
 }
 
@@ -729,12 +246,12 @@ body.page-femme {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 50px !important; 
+    gap: 50px !important;
     max-width: 1000px !important;
     width: 100% !important;
 }
 
-.photo-julian, 
+.photo-julian,
 .photo-charlene {
     width: 200px !important;
     height: 270px !important;
@@ -743,31 +260,25 @@ body.page-femme {
     flex-shrink: 0 !important;
 }
 
-.kine-desc {
-    text-align: justify !important;
-    line-height: 1.5 !important;
-    /* Marge entre texte et bouton identique pour les deux */
-    margin-bottom: 25px !important; 
-}
+.kine-desc { text-align: justify !important; line-height: 1.5 !important; margin-bottom: 25px !important; }
 
-/* Couleurs spécifiques */
 .page-sport .kine-hero { background-color: #d4e3d4 !important; }
 .page-femme .kine-hero { background-color: #f2d8d5 !important; }
-/* FORCE L'ALIGNEMENT DU RETOUR (SPORT & FEMME) */
+
+/* --- BARRE "RETOUR" --- */
 .page-sport .top-back-link,
 .page-femme .container-detail:first-of-type {
     background-color: #ffffff !important;
     width: 100% !important;
     max-width: none !important;
     margin: 0 !important;
-    padding: 15px 40px !important; /* C'est cette ligne qui gère l'alignement gauche */
+    padding: 15px 40px !important;
     display: flex !important;
     justify-content: flex-start !important;
     min-height: 50px !important;
     box-sizing: border-box !important;
 }
 
-/* Style du texte identique */
 .back-link, .top-back-link {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 0.9rem !important;
@@ -775,291 +286,124 @@ body.page-femme {
     text-decoration: none !important;
 }
 
-/* Couleurs */
 .page-sport .top-back-link { color: #1e3d14 !important; }
 .page-femme .back-link { color: #3e2723 !important; }
-
-/* Colle le bandeau couleur en dessous */
 .kine-hero { margin-top: 0 !important; }
-/* Ajoute le cadre blanc décalé pour Charlène (identique à Julian) */
-.page-femme .photo-charlene {
-    box-shadow: 12px 12px 0px rgba(255, 255, 255, 0.4) !important;
-    border-radius: 4px !important; /* Pour un look rectangle pro */
-}
 
-/* On s'assure que Julian a exactement le même réglage */
-.page-sport .photo-julian {
-    box-shadow: 12px 12px 0px rgba(255, 255, 255, 0.4) !important;
-    border-radius: 4px !important;
-}
-/* --- HARMONIE PÔLE FEMME (ÉQUILIBRÉE) --- */
+.page-femme .photo-charlene { box-shadow: 12px 12px 0px rgba(255, 255, 255, 0.4) !important; border-radius: 4px !important; }
+.page-sport .photo-julian { box-shadow: 12px 12px 0px rgba(255, 255, 255, 0.4) !important; border-radius: 4px !important; }
 
-/* 1. Le bas de la page - Un vieux rose moins sombre */
-body.page-femme {
-    background-color: #c09a92 !important; /* Rose terre cuite doux */
-}
+/* --- HARMONIE PÔLE FEMME --- */
+body.page-femme { background-color: #c09a92 !important; }
+.page-femme .kine-hero { background-color: #edd9d5 !important; }
+.page-femme .kine-greeting { color: #4a342e !important; }
+.page-femme .kine-desc { color: #4a342e !important; }
+.page-femme .btn-rdv-maiia { background-color: #5d4037 !important; color: #ffffff !important; }
 
-/* 2. Le bandeau du haut - Un nude plus présent (moins "blanc") */
-.page-femme .kine-hero {
-    background-color: #edd9d5 !important; /* Rose poudré satiné */
-}
-
-/* 3. Ajustement des textes pour la douceur */
-.page-femme .kine-greeting {
-    color: #4a342e !important; 
-}
-
-.page-femme .kine-desc {
-    color: #4a342e !important;
-}
-
-/* 4. On garde le bouton bien visible mais harmonisé */
-.page-femme .btn-rdv-maiia {
-    background-color: #5d4037 !important; /* Chocolat doux */
-    color: #ffffff !important;
-}
 /* ==========================================================
    HARMONISATION STRICTE DES TITRES DE PÔLES
    ========================================================== */
-
-/* On cible la classe .detail-title qui est commune aux deux pages */
-body.page-sport .detail-title, 
+body.page-sport .detail-title,
 body.page-femme .detail-title {
-    /* 1. La Police et la Taille */
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 2.2rem !important;      /* Taille strictement identique */
-    font-weight: 300 !important;       /* Écriture fine élégante */
+    font-size: 2.2rem !important;
+    font-weight: 300 !important;
     text-transform: uppercase !important;
     letter-spacing: 4px !important;
     color: #ffffff !important;
-    
-    /* 2. Le Placement (Positionnement au pixel près) */
     display: block !important;
     width: 100% !important;
     text-align: center !important;
-    margin: 0 auto !important;         /* Centre le bloc */
-    padding-top: 70px !important;      /* Espace fixe identique sous le bandeau photo */
-    padding-bottom: 50px !important;   /* Espace fixe avant les cases */
-    
-    /* 3. Sécurité */
+    margin: 0 auto !important;
+    padding-top: 70px !important;
+    padding-bottom: 50px !important;
     line-height: 1.2 !important;
     min-height: auto !important;
 }
 
-/* On s'assure que le conteneur qui les porte n'ajoute pas de décalage */
-.container-detail {
-    padding-top: 0 !important; /* On laisse le padding du titre gérer l'espace */
-    margin-top: 0 !important;
-}
-/* ==========================================================
-   HARMONISATION STRICTE DES TITRES DE PÔLES
-   ========================================================== */
+.container-detail { padding-top: 0 !important; margin-top: 0 !important; }
 
-/* On cible la classe .detail-title qui est commune aux deux pages */
-body.page-sport .detail-title, 
-body.page-femme .detail-title {
-    /* 1. La Police et la Taille */
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 2.2rem !important;      /* Taille strictement identique */
-    font-weight: 300 !important;       /* Écriture fine élégante */
-    text-transform: uppercase !important;
-    letter-spacing: 4px !important;
-    color: #ffffff !important;
-    
-    /* 2. Le Placement (Positionnement au pixel près) */
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
-    margin: 0 auto !important;         /* Centre le bloc */
-    padding-top: 70px !important;      /* Espace fixe identique sous le bandeau photo */
-    padding-bottom: 50px !important;   /* Espace fixe avant les cases */
-    
-    /* 3. Sécurité */
-    line-height: 1.2 !important;
-    min-height: auto !important;
-}
-
-/* On s'assure que le conteneur qui les porte n'ajoute pas de décalage */
-.container-detail {
-    padding-top: 0 !important; /* On laisse le padding du titre gérer l'espace */
-    margin-top: 0 !important;
-}
-/* ==========================================================
-   HARMONISATION STRICTE DES TITRES DE PÔLES
-   ========================================================== */
-
-/* On cible la classe .detail-title qui est commune aux deux pages */
-body.page-sport .detail-title, 
-body.page-femme .detail-title {
-    /* 1. La Police et la Taille */
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 2.2rem !important;      /* Taille strictement identique */
-    font-weight: 300 !important;       /* Écriture fine élégante */
-    text-transform: uppercase !important;
-    letter-spacing: 4px !important;
-    color: #ffffff !important;
-    
-    /* 2. Le Placement (Positionnement au pixel près) */
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
-    margin: 0 auto !important;         /* Centre le bloc */
-    padding-top: 70px !important;      /* Espace fixe identique sous le bandeau photo */
-    padding-bottom: 50px !important;   /* Espace fixe avant les cases */
-    
-    /* 3. Sécurité */
-    line-height: 1.2 !important;
-    min-height: auto !important;
-}
-
-/* On s'assure que le conteneur qui les porte n'ajoute pas de décalage */
-.container-detail {
-    padding-top: 0 !important; /* On laisse le padding du titre gérer l'espace */
-    margin-top: 0 !important;
-}
-/* --- NOUVELLE HARMONIE PÔLE SPORT (PLUS DOUCE) --- */
-
-/* 1. Le bas de la page - Vert sauge soutenu (moins sombre) */
-body.page-sport {
-    background-color: #7a9478 !important; 
-}
-
-/* 2. Le bandeau du haut - Vert sauge doux (plus pigmenté) */
-.page-sport .kine-hero {
-    background-color: #c5d1c4 !important; 
-}
-
-/* 3. Ajustement des textes (pour que ce soit lisible sans être noir) */
+/* --- HARMONIE PÔLE SPORT --- */
+body.page-sport { background-color: #7a9478 !important; }
+.page-sport .kine-hero { background-color: #c5d1c4 !important; }
 .page-sport .kine-greeting,
-.page-sport .kine-desc {
-    color: #2c3e2b !important; /* Un vert très très sombre */
-}
+.page-sport .kine-desc { color: #2c3e2b !important; }
+.page-sport .btn-rdv-maiia { background-color: #4a5d48 !important; color: #ffffff !important; }
+.page-sport .spec-card { background: #4a5d48 !important; }
 
-/* 4. Le bouton - On l'accorde au fond du bas pour créer un rappel */
-.page-sport .btn-rdv-maiia {
-    background-color: #4a5d48 !important;
-    color: #ffffff !important;
-}
-
-/* 5. Les cases de spécialités */
-.page-sport .spec-card {
-    background: #4a5d48 !important; /* Même couleur que le bouton pour l'unité */
-}
-/* --- CORRECTION FINALE : TAILLE BANDEAU IDENTIQUE --- */
-
+/* --- TAILLE BANDEAU IDENTIQUE --- */
 .kine-hero {
-    height: 350px !important;      /* Force la hauteur exacte */
-    min-height: 350px !important;  
-    padding-top: 0 !important;     /* Supprime les marges internes qui gonflent le bandeau */
+    height: 350px !important;
+    min-height: 350px !important;
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
     display: flex !important;
     align-items: center !important;
 }
 
-.photo-charlene, .photo-julian {
-    height: 270px !important;      /* Force la taille de la photo pour ne pas pousser les bords */
-    width: 200px !important;
-    object-fit: cover !important;
-}
+.photo-charlene, .photo-julian { height: 270px !important; width: 200px !important; object-fit: cover !important; }
+.kine-desc { margin-bottom: 15px !important; }
 
-.kine-desc {
-    margin-bottom: 15px !important; /* Réduit un peu l'espace sous le texte pour tout faire tenir dans 350px */
-}
-/* DESCENDRE UNIQUEMENT LA PHOTO DE CHARLENE */
-.page-femme .photo-charlene {
-    margin-top: 30px !important; /* Ajuste ce chiffre (40px, 50px...) pour la descendre plus ou moins */
-}
-/* MONTER LÉGÈREMENT LA PHOTO DE CHARLÈNE */
-.page-femme .photo-charlene {
-    margin-top: 20px !important; /* On passe de 30px à 20px pour qu'elle soit plus haute */
-}
-/* DESCENDRE ENCORE UN PEU PLUS LA PHOTO */
-.page-femme .photo-charlene {
-    margin-top: 45px !important; 
-}
-/* Style du titre principal (Gras) */
-.page-femme .text-content h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem !important; /* Taille équilibrée */
-    font-weight: 700 !important;  /* Bien en gras pour le titre */
-    color: #3e2723;
-    line-height: 1.5;
-    text-align: justify;
-}
+/* --- PHOTO DE CHARLÈNE --- */
+.page-femme .photo-charlene { margin-top: 45px !important; }
 
-/* Style après les deux points (Plus petit et fin) */
-.page-femme .details-sante {
-    font-weight: 400 !important;  /* Pas de gras */
-    font-size: 0.95rem !important; /* Écriture plus petite */
-    opacity: 0.9;                 /* Légèrement plus doux */
-}
-/* JUSTIFIER LE TITRE ET LES DÉTAILS */
+/* --- TEXTES PÔLE FEMME --- */
 .page-femme .text-content h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.05rem !important;
-    font-weight: 700 !important; /* "Santé de la femme" reste en gras */
+    font-weight: 700 !important;
     color: #3e2723;
     line-height: 1.6;
-    
-    /* --- JUSTIFICATION ICI --- */
     text-align: justify !important;
     text-justify: inter-word;
     width: 100%;
     margin-bottom: 15px;
 }
 
-/* Style après les deux points (plus petit et fin) */
-.page-femme .details-sante {
-    font-weight: 400 !important;   /* Écriture normale (pas grasse) */
-    font-size: 0.9rem !important;  /* Taille plus petite */
-    display: inline;               /* Reste sur la même ligne */
-}
-/* Style de la carte (l'écrin) */
+.page-femme .details-sante { font-weight: 400 !important; font-size: 0.9rem !important; display: inline; }
+
+/* --- CARTES (écrin) --- */
 .spec-card {
-    background: rgba(62, 39, 35, 0.9); /* Ton marron signature */
-    padding: 35px;                     /* On augmente l'espace interne pour l'élégance */
+    background: rgba(62, 39, 35, 0.9);
+    padding: 35px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    min-height: 250px;                 /* Force les cases à avoir la même hauteur */
+    min-height: 250px;
     transition: all 0.3s ease;
 }
 
-/* Style du texte à l'intérieur */
 .spec-card h3 {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 0.85rem !important;
-    line-height: 1.7 !important;       /* Plus d'espace entre les lignes pour la lisibilité */
+    line-height: 1.7 !important;
     color: #ffffff !important;
     text-align: justify !important;
     text-justify: inter-word;
-    hyphens: auto;                     /* Coupe proprement les mots trop longs */
+    hyphens: auto;
     margin: 0 !important;
 }
 
-/* Style des titres en majuscules (MATERNITÉ, etc.) */
 .titre-gras {
-    display: block;                    /* Le titre prend sa propre ligne */
+    display: block;
     font-weight: 700 !important;
-    text-transform: uppercase;         /* Tout en majuscules */
-    letter-spacing: 1.5px;             /* Petit espace entre les lettres (très chic) */
-    margin-bottom: 12px;               /* Espace sous le titre */
-    color: #e3d5ca;                    /* Un beige sable doux pour contraster */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    color: #e3d5ca;
 }
-/* --- GRILLE SPORTIVE ADAPTATIVE --- */
 
+/* --- GRILLE ET CARTES PÔLE SPORT --- */
 .page-sport .specialites-grid {
     display: grid;
-    /* 3 colonnes sur grand écran, s'adapte automatiquement sur petit */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 15px;
     margin-top: 30px;
 }
 
-/* Style de la case : plus de min-height, la taille s'adapte au texte */
 .page-sport .spec-card {
-    background: rgba(45, 71, 59, 0.9); /* Vert sombre signature */
-    padding: 25px 20px;                /* Padding équilibré */
+    background: #4a5d48 !important;
+    padding: 25px 20px;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -1068,119 +412,52 @@ body.page-sport {
     text-decoration: none;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    height: auto;                      /* La case s'adapte au texte */
+    height: auto !important;
+    min-height: 0 !important;
 }
 
 .page-sport .spec-card:hover {
     transform: translateY(-3px);
-    background: rgba(55, 81, 69, 1);
+    background: rgba(55, 81, 69, 1) !important;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Style du titre identique au Pôle Femme (Majuscules + Espacement) */
 .titre-gras-sport {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 0.85rem !important;
     font-weight: 700 !important;
-    text-transform: uppercase;         /* Majuscules */
-    letter-spacing: 1.5px;             /* Espacement chic */
-    color: #ffffff;
-    line-height: 1.4;
-    display: block;
-}
-/* --- STYLE DES CARTES PÔLE SPORTIF --- */
-
-.page-sport .specialites-grid {
-    display: grid;
-    /* Crée 3 colonnes sur grand écran, s'adapte sur mobile */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.page-sport .spec-card {
-    background: rgba(45, 71, 59, 0.9); /* Ton vert sombre */
-    padding: 25px 20px;                /* Padding fixe pour que la case entoure le texte */
-    border-radius: 15px;
-    display: flex;
-    align-items: center;               /* Centre verticalement */
-    justify-content: center;           /* Centre horizontalement */
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    
-    /* Supprime toute hauteur fixe pour que la case s'adapte au texte */
-    height: auto !important;           
-    min-height: 0 !important;          
-}
-
-.page-sport .spec-card:hover {
-    transform: translateY(-3px);
-    background: rgba(55, 81, 69, 1);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* --- STYLE DU TITRE (IDEM PÔLE FEMME) --- */
-
-.titre-gras-sport {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 0.85rem !important;      /* Taille fine et élégante */
-    font-weight: 700 !important;
-    text-transform: uppercase;          /* Majuscules */
-    letter-spacing: 1.5px;              /* Espacement entre les lettres */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     color: #ffffff;
     line-height: 1.4;
     display: block;
     margin: 0 !important;
 }
-/* --- ALIGNEMENT HAUT DE PAGE --- */
 
-.page-sport .kine-hero {
-    padding-bottom: 20px !important; /* Réduit l'espace sous la photo de Julian */
-    margin-bottom: 0 !important;
-}
+/* --- ALIGNEMENT HAUT DE PAGE (SPORT) --- */
+.page-sport .kine-hero { padding-bottom: 20px !important; margin-bottom: 0 !important; }
+.page-sport .container-detail { margin-top: -30px !important; padding-top: 0 !important; }
+.page-sport .detail-title { margin-top: 0 !important; margin-bottom: 15px !important; padding-top: 0 !important; }
+.page-sport .specialites-grid { margin-top: 0 !important; padding-top: 0 !important; }
 
-.page-sport .container-detail {
-    margin-top: -30px !important; /* Remonte tout le bloc titre + cases vers le haut */
-    padding-top: 0 !important;
-}
-
-.page-sport .detail-title {
-    margin-top: 0 !important;
-    margin-bottom: 15px !important; /* Rapproche les cases du titre */
-    padding-top: 0 !important;
-}
-
-.page-sport .specialites-grid {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
 /* ==========================================================
    VERROUILLAGE FINAL : ALIGNEMENT MIROIR
    ========================================================== */
+body.page-sport .container-detail,
+body.page-femme .container-detail { margin-top: 0 !important; padding-top: 0 !important; }
 
-/* 1. On réinitialise TOUT l'espace au-dessus des titres sur les deux pages */
-body.page-sport .container-detail, 
-body.page-femme .container-detail {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-/* 2. On impose la même position exacte aux deux titres */
-body.page-sport .detail-title, 
+body.page-sport .detail-title,
 body.page-femme .detail-title {
     margin: 0 auto !important;
-    padding-top: 60px !important;    /* Ajuste ce chiffre pour monter/descendre les deux en même temps */
-    padding-bottom: 40px !important; /* Espace entre titre et cases */
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
     display: block !important;
     text-align: center !important;
 }
 
-/* 3. On force les cases Sport à être identiques aux cases Femme */
 body.page-sport .spec-card {
-    min-height: 250px !important;    /* Même hauteur que chez Charlène */
-    background: #4a5d48 !important;  /* Ta couleur verte */
+    min-height: 250px !important;
+    background: #4a5d48 !important;
     border-radius: 20px !important;
     padding: 35px !important;
     display: flex !important;
@@ -1188,7 +465,6 @@ body.page-sport .spec-card {
     justify-content: center !important;
 }
 
-/* 4. On s'assure que les titres des cases Sport sont bien stylés */
 body.page-sport .titre-gras-sport {
     font-size: 0.85rem !important;
     font-weight: 700 !important;
@@ -1197,198 +473,109 @@ body.page-sport .titre-gras-sport {
     text-align: center !important;
     line-height: 1.5 !important;
 }
-/* ==========================================================
-   RÉDUCTION DE LA TAILLE DES CASES PÔLE SPORTIF
-   ========================================================== */
 
-/* 1. On réduit la hauteur et l'épaisseur des cases sportives */
+/* --- RÉDUCTION DES CASES PÔLE SPORTIF --- */
 body.page-sport .spec-card {
-    min-height: 120px !important;    /* Hauteur beaucoup plus petite que 250px */
-    padding: 20px 15px !important;   /* Moins d'espace interne pour compacter */
-    border-radius: 15px !important;  /* Arrondi légèrement réduit pour aller avec la taille */
+    min-height: 120px !important;
+    padding: 20px 15px !important;
+    border-radius: 15px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
 }
 
-/* 2. On ajuste la grille pour qu'elle soit plus compacte */
-body.page-sport .specialites-grid {
-    gap: 12px !important;            /* Rapproche un peu les cases entre elles */
-    max-width: 1100px !important;    /* Largeur de la grille */
-    margin: 0 auto !important;
-}
+body.page-sport .specialites-grid { gap: 12px !important; max-width: 1100px !important; margin: 0 auto !important; }
+body.page-sport .titre-gras-sport { font-size: 0.8rem !important; letter-spacing: 1.2px !important; line-height: 1.3 !important; }
 
-/* 3. On s'assure que le titre dans la case reste bien proportionné */
-body.page-sport .titre-gras-sport {
-    font-size: 0.8rem !important;    /* Texte légèrement plus petit pour les petites cases */
-    letter-spacing: 1.2px !important;
-    line-height: 1.3 !important;
-}
-/* ==========================================================
-   ÉLARGISSEMENT DES CASES PÔLE FEMME
-   ========================================================== */
+/* --- ÉLARGISSEMENT DES CASES PÔLE FEMME --- */
+body.page-femme .specialites-grid { max-width: 1100px !important; width: 100% !important; margin: 0 auto !important; gap: 20px !important; }
 
-/* 1. On autorise la grille à prendre toute la largeur disponible */
-body.page-femme .specialites-grid {
-    max-width: 1100px !important; /* Même largeur maximale que le pôle sport */
-    width: 100% !important;
-    margin: 0 auto !important;
-    gap: 20px !important;         /* Espace entre les deux colonnes */
-}
-
-/* 2. On s'assure que les cases s'étirent bien */
 body.page-femme .spec-card {
     width: 100% !important;
-    min-height: 250px !important; /* On garde la hauteur actuelle */
+    min-height: 210px !important;
+    padding: 30px 40px !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
+    padding-top: 40px !important;
     box-sizing: border-box !important;
 }
 
-/* 3. On ajuste le texte pour qu'il profite de la nouvelle longueur */
 body.page-femme .spec-card h3 {
-    text-align: justify !important; /* Garde le texte propre */
+    text-align: justify !important;
     width: 100% !important;
-}
-/* ==========================================================
-   HARMONISATION DES TEXTES DE CONTENU (CASES)
-   ========================================================== */
-
-/* On cible le texte descriptif de Femme ET le texte de Sport */
-body.page-femme .details-sante,
-body.page-sport .titre-gras-sport {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 0.85rem !important;    /* Taille identique */
-    font-weight: 500 !important;      /* Graisse medium (pas trop gras, pas trop fin) */
-    letter-spacing: 0.5px !important; /* Léger espacement pour la clarté */
-    line-height: 1.6 !important;      /* Même hauteur de ligne */
-}
-
-/* Note pour le Pôle Sport : 
-   Si tu veux que le texte sport ne soit PLUS en majuscules (pour ressembler au texte descriptif de femme), 
-   décommente la ligne ci-dessous : */
-
-/* body.page-sport .titre-gras-sport { text-transform: none !important; } *
-/* ==========================================================
-   RÉGLAGE FINAL HAUTEUR PÔLE FEMME (210PX)
-   ========================================================== */
-
-body.page-femme .spec-card {
-    /* Hauteur intermédiaire entre 180 et 250 */
-    min-height: 210px !important; 
-    
-    /* On garde la largeur maximale */
-    width: 100% !important;
-    padding: 30px 40px !important;
-    
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-}
-
-/* On verrouille la largeur de la grille pour l'alignement gauche/droite */
-body.page-femme .specialites-grid {
-    max-width: 1100px !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-    gap: 20px !important;
-}
-/* ==========================================================
-   ALIGNEMENT PARFAIT DES TITRES DANS LES CASES
-   ========================================================== */
-
-/* 1. On force le contenu des cases à s'aligner en haut et non au centre */
-body.page-femme .spec-card {
-    justify-content: flex-start !important; /* Aligne le contenu vers le haut */
-    padding-top: 40px !important;           /* Espace fixe avant le titre */
-}
-
-/* 2. On harmonise les marges des titres (H3) pour qu'ils soient sur la même ligne */
-body.page-femme .spec-card h3 {
     margin-top: 0 !important;
     margin-bottom: 15px !important;
     display: block !important;
-    width: 100% !important;
 }
 
-/* 3. On s'assure que le texte descriptif ne décale rien */
-body.page-femme .details-sante {
-    margin-top: 0 !important;
+/* --- HARMONISATION DES TEXTES DE CONTENU (CASES) --- */
+body.page-femme .details-sante,
+body.page-sport .titre-gras-sport {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.6 !important;
 }
+
+body.page-femme .details-sante { margin-top: 0 !important; }
+
 /* ==========================================================
-   CORRECTION MOBILE CIBLÉE (PÔLE SPORTIF & FEMME)
+   PÔLE GÉNÉRAL & SPORTIF : DEUX KINÉS (Julian + Paul)
    ========================================================== */
+.kine-duo { display: flex; gap: 30px; align-items: flex-start; flex-shrink: 0; }
 
+.kine-person { display: flex; flex-direction: column; align-items: center; gap: 22px; }
+
+/* Le bandeau s'adapte à la photo + au bouton en dessous */
+.page-sport .kine-hero { height: auto !important; min-height: 400px !important; padding: 40px 20px !important; }
+
+/* Bouton de la même largeur que la photo */
+.kine-person .btn-rdv-maiia { width: 200px; text-align: center; padding: 12px 10px; }
+
+/* ==========================================================
+   CORRECTION MOBILE (PÔLE SPORTIF & FEMME)
+   ========================================================== */
 @media (max-width: 768px) {
-    /* 1. FIX PHOTO COUPÉE : On descend le bloc pour ne plus cacher le haut */
-    .kine-hero {
-        padding-top: 60px !important; /* Donne de l'air en haut */
-        height: auto !important;
-    }
+    .kine-hero { padding-top: 60px !important; height: auto !important; }
+    .kine-hero-content { flex-direction: column !important; gap: 20px !important; }
 
-    .kine-hero-content {
-        flex-direction: column !important;
-        gap: 20px !important;
-    }
-
-    /* 2. CASES PAR DEUX : Plus petites et alignées côte à côte */
     .page-sport .specialites-grid {
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important; /* 2 colonnes sur mobile */
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 10px !important;
         padding: 10px !important;
     }
 
-    .page-sport .spec-card {
-        min-height: 100px !important; /* Moins haute pour tenir à deux */
-        padding: 10px !important;
-    }
+    .page-sport .spec-card { min-height: 100px !important; padding: 10px !important; }
+    .page-sport .titre-gras-sport { font-size: 0.75rem !important; }
 
-    .page-sport .titre-gras-sport {
-        font-size: 0.75rem !important; /* Texte un peu plus petit pour tenir */
-    }
-
-    /* 3. FIX BOUTON RETOUR : On s'assure qu'il est cliquable et visible */
     .top-back-link, .back-link {
         position: relative !important;
-        z-index: 9999 !important; /* Passe devant tout le reste */
+        z-index: 9999 !important;
         display: inline-block !important;
-        padding: 15px !important; /* Zone de clic plus grande pour le pouce */
-        background-color: white !important; /* Fond blanc pour bien le voir */
+        padding: 15px !important;
+        background-color: white !important;
         width: 100% !important;
         text-align: left !important;
     }
 
-    /* Ajustement photo Julian/Charlène */
-    .photo-julian, .photo-charlene {
-        width: 160px !important;
-        height: auto !important;
-        margin-top: 10px !important; /* Évite de toucher le bouton retour */
-    }
+    .photo-julian, .photo-charlene { width: 160px !important; height: auto !important; margin-top: 10px !important; }
 }
-/* ==========================================================
-   NETTOYAGE COMPLET MOBILE - PÔLE SPORT
-   ========================================================== */
 
+/* --- NETTOYAGE MOBILE - PÔLE SPORT --- */
 @media (max-width: 768px) {
-    /* 1. On descend tout pour que rien ne soit coupé en haut */
     .kine-hero {
         display: flex !important;
         flex-direction: column !important;
-        padding: 80px 20px 40px 20px !important; /* Plus d'espace en haut */
+        padding: 80px 20px 40px 20px !important;
         height: auto !important;
         background-color: #d4e3d4 !important;
     }
 
-    .kine-hero-content {
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
-        gap: 15px !important;
-    }
+    .kine-hero-content { flex-direction: column !important; align-items: center !important; text-align: center !important; gap: 15px !important; }
 
-    /* 2. Photo bien cadrée */
     .photo-julian {
         width: 150px !important;
         height: 180px !important;
@@ -1396,20 +583,9 @@ body.page-femme .details-sante {
         box-shadow: 8px 8px 0px rgba(255, 255, 255, 0.3) !important;
     }
 
-    /* 3. Texte bien espacé */
-    .kine-greeting {
-        font-size: 1.8rem !important;
-        margin-bottom: 10px !important;
-    }
+    .kine-greeting { font-size: 1.8rem !important; margin-bottom: 10px !important; }
+    .kine-desc { font-size: 0.9rem !important; line-height: 1.4 !important; margin-bottom: 20px !important; text-align: center !important; }
 
-    .kine-desc {
-        font-size: 0.9rem !important;
-        line-height: 1.4 !important;
-        margin-bottom: 20px !important;
-        text-align: center !important;
-    }
-
-    /* 4. UN SEUL bouton RDV bien propre */
     .btn-rdv-maiia {
         display: inline-block !important;
         width: 80% !important;
@@ -1421,18 +597,11 @@ body.page-femme .details-sante {
         border-radius: 5px !important;
     }
 
-    /* 5. TITRE DU PÔLE */
-    .detail-title {
-        font-size: 1.4rem !important;
-        padding: 40px 10px 20px 10px !important;
-        background-color: #7a9478 !important; /* Le fond du bas */
-        margin: 0 !important;
-    }
+    .detail-title { font-size: 1.4rem !important; padding: 40px 10px 20px 10px !important; background-color: #7a9478 !important; margin: 0 !important; }
 
-    /* 6. GRILLE PAR DEUX (Propre et alignée) */
     .page-sport .specialites-grid {
         display: grid !important;
-        grid-template-columns: 1fr 1fr !important; /* Deux colonnes égales */
+        grid-template-columns: 1fr 1fr !important;
         gap: 10px !important;
         padding: 15px !important;
         background-color: #7a9478 !important;
@@ -1448,68 +617,165 @@ body.page-femme .details-sante {
         border-radius: 10px !important;
     }
 
-    .titre-gras-sport {
-        font-size: 0.7rem !important;
-        text-align: center !important;
-    }
+    .titre-gras-sport { font-size: 0.7rem !important; text-align: center !important; }
 }
-/* ==========================================================
-   NETTOYAGE RADICAL PÔLE FEMME (SUPPRESSION DU VERT)
-   ========================================================== */
 
-/* 1. On force la suppression du vert sur TOUT ce qui touche au titre */
-body.page-femme .detail-title, 
+/* --- NETTOYAGE MOBILE - PÔLE FEMME --- */
+body.page-femme .detail-title,
 body.page-femme .container-detail,
-body.page-femme section:not(.kine-hero) {
-    background-color: transparent !important;
-    background: none !important;
-}
+body.page-femme section:not(.kine-hero) { background-color: transparent !important; background: none !important; }
 
-/* 2. On s'assure que le fond de la page prend le dessus partout */
-body.page-femme {
-    background-color: #c09a92 !important; /* Ton rose poudré/terre cuite */
-}
+body.page-femme { background-color: #c09a92 !important; }
 
-/* 3. Adaptation des cases femme (Plus petites et par deux) */
 @media (max-width: 768px) {
-    body.page-femme .specialites-grid {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important; /* 2 colonnes */
-        gap: 8px !important;
-        padding: 10px !important;
-        max-width: 100% !important;
-    }
-
-    body.page-femme .spec-card {
-        min-height: 110px !important; /* Cases compactes */
-        height: auto !important;
-        padding: 15px 10px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-    }
-
-    /* Texte miniature pour que ça tienne dans les petites cases */
-    body.page-femme .titre-gras {
-        font-size: 0.7rem !important;
-        margin-bottom: 4px !important;
-    }
-
+    body.page-femme .specialites-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; padding: 10px !important; max-width: 100% !important; }
+    body.page-femme .spec-card { min-height: 110px !important; height: auto !important; padding: 15px 10px !important; display: flex !important; flex-direction: column !important; justify-content: center !important; }
+    body.page-femme .titre-gras { font-size: 0.7rem !important; margin-bottom: 4px !important; }
     body.page-femme .spec-card h3,
-    body.page-femme .details-sante {
-        font-size: 0.65rem !important;
-        line-height: 1.2 !important;
-        text-align: center !important;
-    }
+    body.page-femme .details-sante { font-size: 0.65rem !important; line-height: 1.2 !important; text-align: center !important; }
 }
-/* Uniquement pour les écrans de téléphone (moins de 480px) */
+
+/* --- ÉCRANS DE TÉLÉPHONE (moins de 480px) --- */
 @media (max-width: 480px) {
-    .brand-title {
-        font-size: 2.5rem; /* On réduit la taille (ajuste si besoin) */
-        letter-spacing: 2px; /* On resserre un peu les lettres */
-        white-space: nowrap; /* Empêche de couper le mot en deux */
+    .brand-title { font-size: 2.5rem; letter-spacing: 2px; white-space: nowrap; }
+    .logo-img { max-width: 120px; }
+}
+
+/* ==========================================================
+   PÔLE GÉNÉRAL & SPORTIF : DEUX KINÉS - MOBILE
+   (à garder en dernier pour l'emporter sur les règles mobiles précédentes)
+   ========================================================== */
+@media (max-width: 768px) {
+    .kine-duo { gap: 15px; justify-content: center; flex-shrink: 1; }
+    .page-sport .kine-hero { min-height: 0 !important; padding: 80px 20px 40px 20px !important; }
+    .page-sport .photo-julian { width: 130px !important; height: 170px !important; box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.3) !important; }
+    .kine-person .btn-rdv-maiia { width: 130px !important; max-width: none !important; font-size: 0.65rem !important; padding: 10px 4px !important; }
+}
+
+/* ==========================================================
+   PÔLE GÉNÉRAL & SPORTIF : TROIS KINÉS (Julian + Paul + Pauline)
+   ========================================================== */
+.page-sport .kine-hero-content { max-width: 1300px !important; gap: 50px !important; }
+.page-sport .kine-duo { gap: 25px; }
+.page-sport .photo-julian { width: 160px !important; height: 215px !important; }
+.page-sport .kine-person .btn-rdv-maiia { width: 160px; font-size: 0.8rem; padding: 12px 6px; }
+.page-sport .kine-greeting { font-size: 2.1rem !important; }
+
+/* Écrans moyens : le texte passe sous les photos */
+@media (max-width: 1100px) {
+    .page-sport .kine-hero-content { flex-direction: column !important; text-align: center !important; gap: 30px !important; }
+    .page-sport .kine-desc { text-align: center !important; }
+}
+
+/* Mobile : les trois photos côte à côte */
+@media (max-width: 768px) {
+    .page-sport .kine-duo { gap: 8px; }
+    .page-sport .photo-julian { width: 95px !important; height: 130px !important; box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.3) !important; }
+    .page-sport .kine-person { gap: 14px; }
+    .page-sport .kine-person .btn-rdv-maiia { width: 95px !important; font-size: 0.55rem !important; padding: 8px 2px !important; }
+    .page-sport .kine-greeting { font-size: 1.5rem !important; }
+}
+
+/* ==========================================================
+   PÔLE FEMME : DEUX KINÉS (Charlène + Pauline)
+   (à garder en dernier)
+   ========================================================== */
+.page-femme .kine-hero { height: auto !important; min-height: 400px !important; padding: 40px 20px !important; }
+.page-femme .kine-hero-content { margin-bottom: 0 !important; }
+.page-femme .kine-duo { gap: 30px; }
+.page-femme .kine-person .photo-charlene { margin-top: 0 !important; }
+.page-femme .kine-person .btn-rdv-maiia { width: 200px; text-align: center; padding: 12px 10px; }
+.page-femme .kine-greeting { font-size: 2.2rem !important; }
+
+@media (max-width: 1000px) {
+    .page-femme .kine-hero-content { flex-direction: column !important; text-align: center !important; gap: 30px !important; }
+    .page-femme .kine-desc { text-align: center !important; }
+}
+
+@media (max-width: 768px) {
+    .page-femme .kine-hero { min-height: 0 !important; padding: 80px 20px 40px 20px !important; }
+    .page-femme .kine-duo { gap: 15px; justify-content: center; }
+    .page-femme .kine-person { gap: 16px; }
+    .page-femme .kine-person .photo-charlene { width: 130px !important; height: 175px !important; box-shadow: 6px 6px 0px rgba(255, 255, 255, 0.4) !important; }
+    .page-femme .kine-person .btn-rdv-maiia { width: 130px !important; max-width: none !important; font-size: 0.65rem !important; padding: 10px 4px !important; }
+    .page-femme .kine-greeting { font-size: 1.6rem !important; }
+}
+
+/* ==========================================================
+   AJUSTEMENTS FINAUX : confort mobile & détails (à garder en dernier)
+   ========================================================== */
+html { -webkit-text-size-adjust: 100%; }
+img { max-width: 100%; }
+body { min-height: 100vh; min-height: 100dvh; }
+.photo-julian, .photo-charlene { object-position: center 20% !important; }
+
+/* Cartes du pôle sport : non cliquables */
+body.page-sport .spec-card { cursor: default; }
+body.page-sport .spec-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: #4a5d48 !important;
+}
+
+/* --- TÉLÉPHONE & PETITES TABLETTES --- */
+@media (max-width: 768px) {
+
+    /* Accueil : titre fluide (l'ordinateur reste inchangé) */
+    .brand-title { font-size: clamp(2.6rem, 14vw, 5rem); letter-spacing: 1px; margin-top: -15px; margin-bottom: 20px; }
+    .subtitle { font-size: 1.3rem; margin-bottom: 10px; }
+    .details { font-size: 1rem; letter-spacing: 1px; margin-bottom: 35px; }
+    .navigation-links { margin-top: 0; }
+    .btn-pole { padding: 18px 16px; font-size: 0.95rem; }
+
+    /* Footer plus compact */
+    .footer-bar-glass { padding: 10px 0 calc(10px + env(safe-area-inset-bottom, 0px)); }
+    .footer-content { gap: 10px; }
+    .find-text { font-size: 0.7rem; letter-spacing: 1px; }
+    .btn-google-maps { padding: 8px 16px; font-size: 0.85rem; }
+    .container { padding-bottom: 80px; }
+    .container-detail { padding-bottom: 80px !important; }
+
+    /* Pôle sport : 3 kinés côte à côte, boutons lisibles */
+    .page-sport .kine-duo { width: 100%; gap: 10px; justify-content: center; align-items: flex-start; }
+    .page-sport .kine-person { flex: 1 1 0; max-width: 120px; min-width: 0; gap: 12px; }
+    .page-sport .photo-julian { width: 100% !important; height: auto !important; aspect-ratio: 3 / 4; }
+    .page-sport .kine-person .btn-rdv-maiia {
+        width: 100% !important; min-height: 44px; padding: 8px 4px !important;
+        font-size: 0.7rem !important; line-height: 1.25;
+        display: flex !important; align-items: center; justify-content: center; text-align: center;
     }
-    
-    .logo-img {
-        max-width: 120px; /* On réduit aussi un peu le logo pour gagner de la place */
+    .page-sport .kine-greeting { font-size: 1.5rem !important; }
+    .page-sport .kine-desc { font-size: 0.95rem !important; line-height: 1.5 !important; }
+
+    /* Pôle sport : cartes */
+    body.page-sport .spec-card { min-height: 90px !important; padding: 14px 10px !important; }
+    body.page-sport .spec-card h3 {
+        font-size: 0.85rem !important; line-height: 1.35 !important;
+        text-align: center !important; letter-spacing: 0.3px;
     }
+
+    /* Pôle femme : 2 kinés */
+    .page-femme .kine-duo { width: 100%; gap: 14px; justify-content: center; align-items: flex-start; }
+    .page-femme .kine-person { flex: 1 1 0; max-width: 150px; min-width: 0; gap: 14px; }
+    .page-femme .kine-person .photo-charlene { width: 100% !important; height: auto !important; aspect-ratio: 3 / 4; }
+    .page-femme .kine-person .btn-rdv-maiia {
+        width: 100% !important; min-height: 44px; padding: 8px 4px !important;
+        font-size: 0.72rem !important; line-height: 1.25;
+        display: flex !important; align-items: center; justify-content: center; text-align: center;
+    }
+    .page-femme .kine-greeting { font-size: 1.6rem !important; }
+    .page-femme .kine-desc { font-size: 0.95rem !important; }
+
+    /* Pôle femme : cartes sur 1 colonne, texte lisible */
+    body.page-femme .specialites-grid { grid-template-columns: 1fr !important; gap: 12px !important; padding: 12px !important; }
+    body.page-femme .spec-card { min-height: 0 !important; padding: 22px 20px !important; justify-content: flex-start !important; }
+    body.page-femme .spec-card h3,
+    body.page-femme .details-sante { font-size: 0.9rem !important; line-height: 1.55 !important; text-align: left !important; hyphens: auto; }
+    body.page-femme .titre-gras { font-size: 0.85rem !important; margin-bottom: 8px !important; }
+    body.page-femme .spec-card h3 { margin-bottom: 0 !important; }
+}
+
+@media (max-width: 380px) {
+    .page-sport .kine-greeting, .page-femme .kine-greeting { font-size: 1.35rem !important; }
+    .page-sport .kine-person .btn-rdv-maiia { font-size: 0.64rem !important; }
+}
