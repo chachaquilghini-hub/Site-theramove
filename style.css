@@ -84,7 +84,7 @@ body.home-body { display: flex; justify-content: center; align-items: center; }
 .btn-google-maps:hover { background: white; color: #a6634f; }
 .pin-icon { width: 14px; height: 14px; }
 
-/* --- STYLE COMMUN AUX DEUX PÔLES (SPORT & FEMME) --- */
+/* --- STYLE COMMUN AUX DEUX PÃ”LES (SPORT & FEMME) --- */
 .container-detail {
     max-width: 1000px;
     margin: 0 auto;
@@ -128,13 +128,13 @@ body.home-body { display: flex; justify-content: center; align-items: center; }
     line-height: 1.3;
 }
 
-/* --- SPÉCIFICITÉS PÔLE SPORT --- */
+/* --- SPÃ‰CIFICITÃ‰S PÃ”LE SPORT --- */
 body.page-sport { background-color: #c8e68e !important; color: #1e3d14; }
 .page-sport .spec-card { background: #1e3d14; }
 .page-sport .specialites-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%; }
 .page-sport .back-link { color: #1e3d14; }
 
-/* --- SPÉCIFICITÉS PÔLE FEMME --- */
+/* --- SPÃ‰CIFICITÃ‰S PÃ”LE FEMME --- */
 body.page-femme { background-color: #d8b6ab !important; color: #3e2723; }
 .page-femme .spec-card { background: #3e2723; }
 .page-femme .specialites-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%; max-width: 850px; }
@@ -197,7 +197,7 @@ body.page-femme { background-color: #d8b6ab !important; color: #3e2723; }
 .scroll-indicator { position: absolute; bottom: 10px; font-size: 0.8rem; opacity: 0.7; }
 .mouse-icon { width: 20px; height: 30px; border: 2px solid #555; border-radius: 10px; margin: 5px auto; }
 
-/* --- PÔLE FEMME : bandeau et texte --- */
+/* --- PÃ”LE FEMME : bandeau et texte --- */
 .page-femme section,
 .page-femme .hero,
 .page-femme .header-section { background-color: #fcece9 !important; }
@@ -293,7 +293,7 @@ body.page-femme { background-color: #d8b6ab !important; color: #3e2723; }
 .page-femme .photo-charlene { box-shadow: 12px 12px 0px rgba(255, 255, 255, 0.4) !important; border-radius: 4px !important; }
 .page-sport .photo-julian { box-shadow: 12px 12px 0px rgba(255, 255, 255, 0.4) !important; border-radius: 4px !important; }
 
-/* --- HARMONIE PÔLE FEMME --- */
+/* --- HARMONIE PÃ”LE FEMME --- */
 body.page-femme { background-color: #c09a92 !important; }
 .page-femme .kine-hero { background-color: #edd9d5 !important; }
 .page-femme .kine-greeting { color: #4a342e !important; }
@@ -301,7 +301,7 @@ body.page-femme { background-color: #c09a92 !important; }
 .page-femme .btn-rdv-maiia { background-color: #5d4037 !important; color: #ffffff !important; }
 
 /* ==========================================================
-   HARMONISATION STRICTE DES TITRES DE PÔLES
+   HARMONISATION STRICTE DES TITRES DE PÃ”LES
    ========================================================== */
 body.page-sport .detail-title,
 body.page-femme .detail-title {
@@ -323,7 +323,7 @@ body.page-femme .detail-title {
 
 .container-detail { padding-top: 0 !important; margin-top: 0 !important; }
 
-/* --- HARMONIE PÔLE SPORT --- */
+/* --- HARMONIE PÃ”LE SPORT --- */
 body.page-sport { background-color: #7a9478 !important; }
 .page-sport .kine-hero { background-color: #c5d1c4 !important; }
 .page-sport .kine-greeting,
@@ -344,10 +344,10 @@ body.page-sport { background-color: #7a9478 !important; }
 .photo-charlene, .photo-julian { height: 270px !important; width: 200px !important; object-fit: cover !important; }
 .kine-desc { margin-bottom: 15px !important; }
 
-/* --- PHOTO DE CHARLÈNE --- */
+/* --- PHOTO DE CHARLÃˆNE --- */
 .page-femme .photo-charlene { margin-top: 45px !important; }
 
-/* --- TEXTES PÔLE FEMME --- */
+/* --- TEXTES PÃ”LE FEMME --- */
 .page-femme .text-content h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.05rem !important;
@@ -362,7 +362,7 @@ body.page-sport { background-color: #7a9478 !important; }
 
 .page-femme .details-sante { font-weight: 400 !important; font-size: 0.9rem !important; display: inline; }
 
-/* --- CARTES (écrin) --- */
+/* --- CARTES (Ã©crin) --- */
 .spec-card {
     background: rgba(62, 39, 35, 0.9);
     padding: 35px;
@@ -393,7 +393,7 @@ body.page-sport { background-color: #7a9478 !important; }
     color: #e3d5ca;
 }
 
-/* --- GRILLE ET CARTES PÔLE SPORT --- */
+/* --- GRILLE ET CARTES PÃ”LE SPORT --- */
 .page-sport .specialites-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -474,7 +474,7 @@ body.page-sport .titre-gras-sport {
     line-height: 1.5 !important;
 }
 
-/* --- RÉDUCTION DES CASES PÔLE SPORTIF --- */
+/* --- RÃ‰DUCTION DES CASES PÃ”LE SPORTIF --- */
 body.page-sport .spec-card {
     min-height: 120px !important;
     padding: 20px 15px !important;
@@ -487,7 +487,7 @@ body.page-sport .spec-card {
 body.page-sport .specialites-grid { gap: 12px !important; max-width: 1100px !important; margin: 0 auto !important; }
 body.page-sport .titre-gras-sport { font-size: 0.8rem !important; letter-spacing: 1.2px !important; line-height: 1.3 !important; }
 
-/* --- ÉLARGISSEMENT DES CASES PÔLE FEMME --- */
+/* --- Ã‰LARGISSEMENT DES CASES PÃ”LE FEMME --- */
 body.page-femme .specialites-grid { max-width: 1100px !important; width: 100% !important; margin: 0 auto !important; gap: 20px !important; }
 
 body.page-femme .spec-card {
@@ -522,20 +522,20 @@ body.page-sport .titre-gras-sport {
 body.page-femme .details-sante { margin-top: 0 !important; }
 
 /* ==========================================================
-   PÔLE GÉNÉRAL & SPORTIF : DEUX KINÉS (Julian + Paul)
+   PÃ”LE GÃ‰NÃ‰RAL & SPORTIF : DEUX KINÃ‰S (Julian + Paul)
    ========================================================== */
 .kine-duo { display: flex; gap: 30px; align-items: flex-start; flex-shrink: 0; }
 
 .kine-person { display: flex; flex-direction: column; align-items: center; gap: 22px; }
 
-/* Le bandeau s'adapte à la photo + au bouton en dessous */
+/* Le bandeau s'adapte Ã  la photo + au bouton en dessous */
 .page-sport .kine-hero { height: auto !important; min-height: 400px !important; padding: 40px 20px !important; }
 
-/* Bouton de la même largeur que la photo */
+/* Bouton de la mÃªme largeur que la photo */
 .kine-person .btn-rdv-maiia { width: 200px; text-align: center; padding: 12px 10px; }
 
 /* ==========================================================
-   CORRECTION MOBILE (PÔLE SPORTIF & FEMME)
+   CORRECTION MOBILE (PÃ”LE SPORTIF & FEMME)
    ========================================================== */
 @media (max-width: 768px) {
     .kine-hero { padding-top: 60px !important; height: auto !important; }
@@ -564,7 +564,7 @@ body.page-femme .details-sante { margin-top: 0 !important; }
     .photo-julian, .photo-charlene { width: 160px !important; height: auto !important; margin-top: 10px !important; }
 }
 
-/* --- NETTOYAGE MOBILE - PÔLE SPORT --- */
+/* --- NETTOYAGE MOBILE - PÃ”LE SPORT --- */
 @media (max-width: 768px) {
     .kine-hero {
         display: flex !important;
@@ -620,7 +620,7 @@ body.page-femme .details-sante { margin-top: 0 !important; }
     .titre-gras-sport { font-size: 0.7rem !important; text-align: center !important; }
 }
 
-/* --- NETTOYAGE MOBILE - PÔLE FEMME --- */
+/* --- NETTOYAGE MOBILE - PÃ”LE FEMME --- */
 body.page-femme .detail-title,
 body.page-femme .container-detail,
 body.page-femme section:not(.kine-hero) { background-color: transparent !important; background: none !important; }
@@ -635,15 +635,15 @@ body.page-femme { background-color: #c09a92 !important; }
     body.page-femme .details-sante { font-size: 0.65rem !important; line-height: 1.2 !important; text-align: center !important; }
 }
 
-/* --- ÉCRANS DE TÉLÉPHONE (moins de 480px) --- */
+/* --- Ã‰CRANS DE TÃ‰LÃ‰PHONE (moins de 480px) --- */
 @media (max-width: 480px) {
     .brand-title { font-size: 2.5rem; letter-spacing: 2px; white-space: nowrap; }
     .logo-img { max-width: 120px; }
 }
 
 /* ==========================================================
-   PÔLE GÉNÉRAL & SPORTIF : DEUX KINÉS - MOBILE
-   (à garder en dernier pour l'emporter sur les règles mobiles précédentes)
+   PÃ”LE GÃ‰NÃ‰RAL & SPORTIF : DEUX KINÃ‰S - MOBILE
+   (Ã  garder en dernier pour l'emporter sur les rÃ¨gles mobiles prÃ©cÃ©dentes)
    ========================================================== */
 @media (max-width: 768px) {
     .kine-duo { gap: 15px; justify-content: center; flex-shrink: 1; }
@@ -653,7 +653,7 @@ body.page-femme { background-color: #c09a92 !important; }
 }
 
 /* ==========================================================
-   PÔLE GÉNÉRAL & SPORTIF : TROIS KINÉS (Julian + Paul + Pauline)
+   PÃ”LE GÃ‰NÃ‰RAL & SPORTIF : TROIS KINÃ‰S (Julian + Paul + Pauline)
    ========================================================== */
 .page-sport .kine-hero-content { max-width: 1300px !important; gap: 50px !important; }
 .page-sport .kine-duo { gap: 25px; }
@@ -661,13 +661,13 @@ body.page-femme { background-color: #c09a92 !important; }
 .page-sport .kine-person .btn-rdv-maiia { width: 160px; font-size: 0.8rem; padding: 12px 6px; }
 .page-sport .kine-greeting { font-size: 2.1rem !important; }
 
-/* Écrans moyens : le texte passe sous les photos */
+/* Ã‰crans moyens : le texte passe sous les photos */
 @media (max-width: 1100px) {
     .page-sport .kine-hero-content { flex-direction: column !important; text-align: center !important; gap: 30px !important; }
     .page-sport .kine-desc { text-align: center !important; }
 }
 
-/* Mobile : les trois photos côte à côte */
+/* Mobile : les trois photos cÃ´te Ã  cÃ´te */
 @media (max-width: 768px) {
     .page-sport .kine-duo { gap: 8px; }
     .page-sport .photo-julian { width: 95px !important; height: 130px !important; box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.3) !important; }
@@ -677,8 +677,8 @@ body.page-femme { background-color: #c09a92 !important; }
 }
 
 /* ==========================================================
-   PÔLE FEMME : DEUX KINÉS (Charlène + Pauline)
-   (à garder en dernier)
+   PÃ”LE FEMME : DEUX KINÃ‰S (CharlÃ¨ne + Pauline)
+   (Ã  garder en dernier)
    ========================================================== */
 .page-femme .kine-hero { height: auto !important; min-height: 400px !important; padding: 40px 20px !important; }
 .page-femme .kine-hero-content { margin-bottom: 0 !important; }
@@ -702,14 +702,14 @@ body.page-femme { background-color: #c09a92 !important; }
 }
 
 /* ==========================================================
-   AJUSTEMENTS FINAUX : confort mobile & détails (à garder en dernier)
+   AJUSTEMENTS FINAUX : confort mobile & dÃ©tails (Ã  garder en dernier)
    ========================================================== */
 html { -webkit-text-size-adjust: 100%; }
 img { max-width: 100%; }
 body { min-height: 100vh; min-height: 100dvh; }
 .photo-julian, .photo-charlene { object-position: center 20% !important; }
 
-/* Cartes du pôle sport : non cliquables */
+/* Cartes du pÃ´le sport : non cliquables */
 body.page-sport .spec-card { cursor: default; }
 body.page-sport .spec-card:hover {
     transform: none !important;
@@ -717,10 +717,10 @@ body.page-sport .spec-card:hover {
     background: #4a5d48 !important;
 }
 
-/* --- TÉLÉPHONE & PETITES TABLETTES --- */
+/* --- TÃ‰LÃ‰PHONE & PETITES TABLETTES --- */
 @media (max-width: 768px) {
 
-    /* Accueil : titre fluide (l'ordinateur reste inchangé) */
+    /* Accueil : titre fluide (l'ordinateur reste inchangÃ©) */
     .brand-title { font-size: clamp(2.6rem, 14vw, 5rem); letter-spacing: 1px; margin-top: -15px; margin-bottom: 20px; }
     .subtitle { font-size: 1.3rem; margin-bottom: 10px; }
     .details { font-size: 1rem; letter-spacing: 1px; margin-bottom: 35px; }
@@ -735,7 +735,7 @@ body.page-sport .spec-card:hover {
     .container { padding-bottom: 80px; }
     .container-detail { padding-bottom: 80px !important; }
 
-    /* Pôle sport : 3 kinés côte à côte, boutons lisibles */
+    /* PÃ´le sport : 3 kinÃ©s cÃ´te Ã  cÃ´te, boutons lisibles */
     .page-sport .kine-duo { width: 100%; gap: 10px; justify-content: center; align-items: flex-start; }
     .page-sport .kine-person { flex: 1 1 0; max-width: 120px; min-width: 0; gap: 12px; }
     .page-sport .photo-julian { width: 100% !important; height: auto !important; aspect-ratio: 3 / 4; }
@@ -747,14 +747,14 @@ body.page-sport .spec-card:hover {
     .page-sport .kine-greeting { font-size: 1.5rem !important; }
     .page-sport .kine-desc { font-size: 0.95rem !important; line-height: 1.5 !important; }
 
-    /* Pôle sport : cartes */
+    /* PÃ´le sport : cartes */
     body.page-sport .spec-card { min-height: 90px !important; padding: 14px 10px !important; }
     body.page-sport .spec-card h3 {
         font-size: 0.85rem !important; line-height: 1.35 !important;
         text-align: center !important; letter-spacing: 0.3px;
     }
 
-    /* Pôle femme : 2 kinés */
+    /* PÃ´le femme : 2 kinÃ©s */
     .page-femme .kine-duo { width: 100%; gap: 14px; justify-content: center; align-items: flex-start; }
     .page-femme .kine-person { flex: 1 1 0; max-width: 150px; min-width: 0; gap: 14px; }
     .page-femme .kine-person .photo-charlene { width: 100% !important; height: auto !important; aspect-ratio: 3 / 4; }
@@ -766,7 +766,7 @@ body.page-sport .spec-card:hover {
     .page-femme .kine-greeting { font-size: 1.6rem !important; }
     .page-femme .kine-desc { font-size: 0.95rem !important; }
 
-    /* Pôle femme : cartes sur 1 colonne, texte lisible */
+    /* PÃ´le femme : cartes sur 1 colonne, texte lisible */
     body.page-femme .specialites-grid { grid-template-columns: 1fr !important; gap: 12px !important; padding: 12px !important; }
     body.page-femme .spec-card { min-height: 0 !important; padding: 22px 20px !important; justify-content: flex-start !important; }
     body.page-femme .spec-card h3,
