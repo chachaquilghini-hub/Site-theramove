@@ -779,3 +779,22 @@ body.page-sport .spec-card:hover {
     .page-sport .kine-greeting, .page-femme .kine-greeting { font-size: 1.35rem !important; }
     .page-sport .kine-person .btn-rdv-maiia { font-size: 0.64rem !important; }
 }
+/* Photo Pauline - affichage ordinateur */
+.page-femme .photo-pauline {
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+    image-rendering: auto;
+    border-radius: 4px;
+}
+
+/* Affichage téléphone */
+@media (max-width: 768px) {
+    .page-femme .photo-pauline {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+}
